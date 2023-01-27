@@ -44,7 +44,7 @@ table#database_table {
             
       </head>  
       <body >  
-             <h2><center><b><img src="https://img.icons8.com/nolan/64/database.png"/> USER'S TRAIN BOOKINGS <img src="https://img.icons8.com/ultraviolet/60/000000/train.png"/></center></b></h2>
+             <h2 style="margin-block:6rem;"><center><b>USER'S TRAIN BOOKINGS </center></b></h2>
 
            <div class="container">  
                 <br />  
@@ -83,8 +83,6 @@ echo'<tr class="class="table table-striped table-bordered"">
         <td>'.$row["Type"].'</td>
         <td>₹&nbsp&nbsp'.$row["Amt"].'</td>
         <td><a  href="print.php?pid='.$row["T_No."].' " target="_blank">Click Here</a></td>
-       
-
 ';
 }
 ?>

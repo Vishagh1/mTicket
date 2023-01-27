@@ -1,49 +1,69 @@
 <?php
-include 'connect.php' ;
+include 'connect.php';
 session_start();
-if ($_SESSION['log'] == '')
-{
-    header("location:index.php");
+if ($_SESSION['log'] == '') {
+  header("location:index.php");
 }
 include 'header.php';
 ?>
-<style >
-	.container{
-        border-spacing: 10px;
+<style>
+  body {
+    background-color: whitesmoke;
+  }
 
-      font-family: Montserrat, sans-serif;
-     font-size: 18px !important;
-      border: 2px solid grey;
-        margin-top: 50px;
-        margin-bottom: 200px;
-       padding-top: 50px;
-      padding-right: 70px;
-      padding-bottom: 50px;
-      padding-left: 100px;
-      align-content: center;
-    }
+  .container {
+    width: 35%;
+    border-spacing: 10px;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px !important;
+    align-content: center;
+    padding: 40px 50px 70px 50px;
+    margin-block: 12rem;
+  }
+
+  .link-button {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    width: 100%;
+    transition: .3s all ease;
+  }
+
+  .link-button:hover {
+    background-color: white;
+    color: black;
+  }
 </style>
 
 <html>
+
 <head>
-<link rel='stylesheet' href='index.css'>
-<br><br>
-  <h1><center><b><img src="https://img.icons8.com/cute-clipart/70/000000/bookmark.png"/> User Bookings &nbsp <img src="https://img.icons8.com/nolan/74/ticket.png"/></center></b></h1>
+  <link rel='stylesheet' href='index.css'>
+  <br><br>
 
-<div class="container">
+  <div class="container">
+    <h1 style="text-align:center; font-weight:bold; text-align:center; text-transform:capitalize; margin-block:1rem;">My Bookings</h1>
+    <hr />
+    <td><a href='trainbookings.php'><button class="link-button"><i class="fa-sharp fa-solid fa-ticket"></i>&nbsp &nbsp
+          &nbsp View Train Bookings </button></a></td>
+    </tr>
+    <br> <br>
 
-  <td><a href='trainbookings.php'><button style="background-color: black ; border-color:black " ><img src="https://img.icons8.com/dusk/44/000000/train-ticket.png"/> View Train Bookings </button></a></td>
- </tr> 
-<br> <br> 
+    <tr>
 
-<tr>
-
-<td><a href='busbookings.php'><button style="background-color: black ; border-color:black  "><img src="https://img.icons8.com/officel/50/000000/bus-ticket.png"/> View Bus Bookings</button></a></td></td>
-</tr>
-</table>
-</tr>
-</div>
-<?php include 'footer.php';
-?> 
+      <td><a href='busbookings.php'><button class="link-button"><i class="fa-solid fa-ticket-simple"></i>&nbsp &nbsp
+            &nbsp View Bus Bookings</button></a></td>
+      </td>
+    </tr>
+    </table>
+    </tr>
+  </div>
+  <?php include 'footer.php';
+  ?>
 
 </html>

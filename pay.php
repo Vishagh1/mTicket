@@ -33,7 +33,7 @@ if ($_SESSION['log'] == '')
 <form method='post' action ='payaction.php' >
 <table align="center">
 <tr><td><h3> Card No.: </h3></td> <td colspan='2'><input type="Number" name="cno"  placeholder="1111-2222-3333-4444" maxlength='50'></td></tr>
-<tr><td><h3>Name on Card: </h3></td> <td colspan='2'><input type="Text" name="name" placeholder="Prajwal N. Sutar" maxlength='50'></td></tr>
+<tr><td><h3>Name on Card: </h3></td> <td colspan='2'><input type="Text" name="name" placeholder="Vishagh" maxlength='50'></td></tr>
 <tr><td><h3>Expiry Date : </h3></td> <td><input type="Number" name="Em" placeholder='MM' maxlength='2'></td>
 <td><input type="Number" name="Ey" placeholder='YY' maxlength='2'></td></tr>
 <tr><td><h3>CVV No: </td> </h3><td colspan='2'><input type="Password" name="Cvv" maxlength='3'></td></tr>

@@ -10,39 +10,36 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
+</head>
   
+  <style>
+nav{
+  font-family: 'Poppins', sans-serif;
+  background: black !important;
+  color:white;
+  padding: 1.5rem;
+}
 
-  .navvvvvvbar {
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 0;
-    background-color: #FFC107;
-    border: 0;
-    font-size: 30px !important;
-    letter-spacing: 4px;
-    text-align: left;
-    padding: 17px;
-    color:black;
-   font-weight: 40000;
-
-
-  }
+nav h3{
+  font-size: 3rem !important;
+  letter-spacing:.5rem;
+  font-weight: lighter;
+}
 
 
  
   </style>
-</head>
 
-<nav  class="navvvvvvbar navvvvvvbar-default navvvvvvbar-fixed-top">
-      <div  class="  navvvvvvbar-brand navvvvvvbar-center"><b>&nbsp&nbsp&nbsp<mark>M-TICKET</mark></b>
-    </div>
-    
-
-  
-
+<nav>
+  <div>
+    <b>
+      <h3>M-TICKET</h3>
+    </b>
+  </div>
 </nav>
 
 

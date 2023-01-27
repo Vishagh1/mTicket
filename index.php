@@ -1,13 +1,14 @@
-<?php
 
-include 'homehead.php';
-?>
 
 
 <style >
+  body{
+    overflow:hidden;
+
+  }
   .container{
      border-spacing: 10px;
-     font-family: Montserrat, sans-serif;
+     font-family: 'Poppins', sans-serif;
      font-size: 18px !important;
      border: 2px solid grey;
      margin-top: 50px;
@@ -19,26 +20,109 @@ include 'homehead.php';
      align-content: center;
 
     }
+
+    .hero {
+      height:100vh;
+      /* background: url('https://images.unsplash.com/photo-1563257076-8265731f709d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'); */
+      background-repeat:no-repeat;
+      background-size:cover;
+      background-position: center bottom;
+      position:relative;
+      color:white;
+      padding:25vh 20rem;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+
+
+    /* .hero::after{
+      position: absolute;
+      content:"";
+      inset:0;
+      width:100%;
+      height:100%;
+      background:linear-gradient(to top, transparent 70%, black);
+      background-repeat:no-repeat;
+      background-size:cover;
+      pointer-events:none;
+    } */
+    body{
+    font-weight:300 !important;
+    background: url('https://images.unsplash.com/photo-1563257076-8265731f709d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:  center bottom ;
+    
+ }
+
+    .blackBg{
+      /* background:#00000050; */
+
+    }
+
+    .hero h1{
+      font-size:1.5rem;
+    }
+    .hero p{
+      color:white;
+      text-align:center;
+      margin-bottom:10rem;
+      font-weight:200;
+      line-height:2.5rem;
+    }
+    .hero h1 span{
+      font-size:6.5rem;
+      font-weight:300;
+      /* font-family: 'Unbounded', cursive; */
+      /* font-family: 'DM Serif Text', serif; */
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .hero a{
+      text-decoration:none;
+      text-transform:uppercase;
+      font-weight:bold;
+      margin:10px;
+      padding:1rem 3rem;
+      border:2px solid white;
+      border-radius:5px;
+      background:white;
+      color:black;
+      transition:300ms all ease;
+    }
+
+    .hero a:hover{
+      background:transparent;
+      color:white;
+    }
 </style>
 
 <html>
 <head>
 <link rel='stylesheet' href='index.css'>
-<br><br>
-  <h1   text-transform: capitalize;><center><b><img src="https://img.icons8.com/clouds/90/000000/add-bookmark.png"/> Welcome To M-Ticket Booking Portal <img src="https://img.icons8.com/clouds/90/000000/add-bookmark.png"/></center></b></h1>
+<?php
 
-<div class="container">
+include 'homehead.php';
+?>
+<div class="hero">
+  <div class="blackBg">
 
-  <td><a href='book.php'><button style="background-color: black ; border-color:black "  ><img src="https://img.icons8.com/nolan/54/train.png"/>&nbsp&nbspBook Train Tickets </button></a></td>
- </tr> 
-<br> <br> 
-
-<tr>
-
-<td><a href='bookbus.php'><button style="background-color: black ; border-color:black  "><img src="https://img.icons8.com/nolan/54/bus.png"/>&nbsp&nbspBook Bus Tickets</button></a></td></td>
-</tr>
-</table>
-</tr>
+    <h1>
+      <span>M-Ticket</span>
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, saepe mollitia. Explicabo deleniti, fugiat, quo hic vel, suscipit nobis nostrum sed ex similique debitis reiciendis! Illo adipisci sed recusandae atque.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, saepe mollitia. Explicabo deleniti, fugiat, quo hic vel, suscipit nobis nostrum sed ex similique debitis reiciendis! Illo adipisci sed recusandae atque.
+    </p>
+  </div>
+  <div>
+    <a href="book.php">Book Bus</a>
+    <a href="bookbus.php">Book Train</a>
+  </div>
+</div>
 </div>
 <?php include 'footer.php';
 ?> 
