@@ -2,54 +2,125 @@
 include 'connect.php';
 include 'head2.php';
 session_start();
-if ($_SESSION['log'] == '')
-{
-    header("location:index.php");
+if ($_SESSION['log'] == '') {
+  header("location:index.php");
 }
 ?>
-
 <html>
+
 <head>
-  <style >
-    .formm{
-       font-family: Montserrat, sans-serif;
-     font-size: 18px !important;
-     
+  <style>
+    .formm {
+      font-family: Montserrat, sans-serif;
+      font-size: 18px !important;
+
     }
   </style>
-<link rel='stylesheet' href='index.css'>
-<link rel="shortcut icon" href="logofig.jpg" />
-<title> Registration Page </title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel='stylesheet' href='index.css'>
+  <link rel="shortcut icon" href="logofig.jpg" />
+  <title> Registration Page </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body style="background-color: F5F1F0;">
+<style>
+  body {
+    background-color: whitesmoke;
+  }
 
+  .payment-form {
+    max-width: 600px;
+    margin-top: 10rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px #dfdfdf;
+    padding: 4rem;
+  }
 
+  .payment-form h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-block: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+  .input-container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .input-container .double-input {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .input-container input {
+    background-color: lightgray;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    padding: .8rem;
+  }
+
+  .proceed-button {
+    padding: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    align-content: left;
+    color: white;
+    background-color: black;
+    width: 100%;
+    border-radius: 4px;
+    transition: .3s all ease;
+    /* border-color: black; */
+  }
+
+  .proceed-button:hover {
+    background-color: white;
+    color: black;
+  }
+</style>
+
+<body>
   <div class="formm">
-<h2 align="center"><b>Enter Payment Details :</b>  </h2>
+    <form class="payment-form" method='post' action='buspayaction.php'>
+      <h2>Enter Payment Details</h2>
+      <hr>
+      <div class="input-container">
+        <h3> Card No.: </h3>
+        <input type="Number" name="cno" placeholder="1111-2222-3333-4444" maxlength='50'>
+      </div>
+      <div class="input-container">
+        <h3>Name on Card: </h3>
+        <input type="Text" name="name" placeholder="Vishagh" maxlength='50'>
+      </div>
+      <div class="input-container">
+        <h3>Expiry Date : </h3>
+        <div class="double-input">
+          <input type="Number" name="Em" placeholder='MM' maxlength='2'>
+          <input type="Number" name="Ey" placeholder='YY' maxlength='2'>
+        </div>
+      </div>
+      <div class="input-container">
+        <h3>CVV No:</h3>
+        <input type="Password" name="Cvv" maxlength='3'>
+      </div>
+      <div class="input-container">
+        <h3>PIN NO: </h3>
+        <input type="Password" name="Pin" maxlength='4'>
+      </div>
+      <div class="input-container">
+        <button class="proceed-button" type='Submit' name='register_submit'>Complete Payment</button>
+      </div>
+    </form>
+    <br>
+    <br>
 
 
-<!--<center><img src="logohead.png" width='35%'></center> -->
-<form method='post' action ='buspayaction.php' >
-<table align="center">
-<tr><td><h3>Card No.: </h3></td> <td colspan='2'><input type="Number" name="cno"  placeholder="1111-2222-3333-4444" maxlength='50'></td></tr>
-<tr><td><h3>Name on Card: </h3></td> <td colspan='2'><input type="Text" name="name" placeholder="Prajwal N. Sutar" maxlength='50'></td></tr>
-<tr><td><h3>Expiry Date : </h3></td> <td><input type="Number" name="Em" placeholder='MM' maxlength='2'></td>
-<td><input type="Number" name="Ey" placeholder='YY' maxlength='2'></td></tr>
-<tr><td><h3>CVV No: </td> </h3><td colspan='2'><input type="Password" name="Cvv" maxlength='3'></td></tr>
-<tr><td><h3>PIN NO: </h3> </td> <td colspan='2'><input type="Password" name="Pin" maxlength='4'></td></tr>
 
-
-<tr><td colspan='3'><center><button style="background-color:black ;  border-color:black" type='Submit' name='register_submit' >Complete Payment</Button></center></td></tr>
-</table>
-</form>
-<br>
-<br>
-
-
-</div>
-<?php include 'footer.php';
-?> 
-
+  </div>
+  <?php include 'footer.php';
+  ?>
 
 </html>

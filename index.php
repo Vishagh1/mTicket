@@ -95,6 +95,7 @@
     }
 
     .hero a:hover{
+      text-decoration:none;
       background:transparent;
       color:white;
     }

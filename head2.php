@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>M-Ticket</title>
   <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=0.56, maximum-scale=3.0, minimum-scale=0.46">
+  <meta name="viewport" content="width=device-width, initial-scale=0.56, maximum-scale=3.0, minimum-scale=0.46">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -15,24 +16,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-  
-  <style>
-nav{
-  font-family: 'Poppins', sans-serif;
-  background: black !important;
-  color:white;
-  padding: 1.5rem;
-}
 
-nav h3{
-  font-size: 3rem !important;
-  letter-spacing:.5rem;
-  font-weight: lighter;
-}
+<style>
+  nav {
+    font-family: 'Poppins', sans-serif;
+    background: black !important;
+    color: white;
+    padding: 1.5rem;
+  }
 
-
- 
-  </style>
+  nav h3 {
+    font-size: 3rem !important;
+    letter-spacing: .5rem;
+    font-weight: lighter;
+  }
+</style>
 
 <nav>
   <div>
