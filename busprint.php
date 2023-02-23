@@ -43,7 +43,7 @@
 
   #printable {
     border: 1px solid #dfdfdf;
-    box-shadow: -5px 5px 10px 0px #dfdfdf;
+    box-shadow: 0px 0px 10px 0px gray;
     background-color: white;
   }
 
@@ -55,14 +55,14 @@
   }
 
   .title {
-    background-color: rgb(255, 182, 45);
+    background-color: rgb(255, 195, 85);
     width: 100%;
     padding: 10px;
     text-align: center;
     margin-bottom: 2rem;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    color: white;
+    color:rgb(29, 28, 28);
   }
 
   .table * {
@@ -77,6 +77,10 @@
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
   }
+  .tickethead {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
 </style>
 
 <?php
@@ -90,7 +94,9 @@ while ($row = $rs->fetch_assoc()) {
 
 ?>
   <div class="center">
-    <h1 style="margin-bottom: 3rem;">Ticket Details</h1>
+  <div class="tickethead">
+      <h1 style="margin-bottom: 3rem;">Ticket Details&nbsp;&nbsp;<i class="fa-solid fa-ticket"></i></h1>
+    </div>
 
     <div id="printable" class="center ticket">
       <!-- <h1>Booking ID: <?php echo $row['T_No.'] ?> </h1> -->
@@ -108,9 +114,9 @@ while ($row = $rs->fetch_assoc()) {
         <h2>No of Passengers</h2>
         <h2><?php echo $row['NoOfpass'] ?></h2>
         <h2>Amount</h2>
-        <h2><?php echo $row['NoOfpass'] ?></h2>
+        <h2>₹&nbsp;<?php echo $row['Amt'] ?></h2>
       </div>
-      <h2 style="background-color: rgb(255, 182, 45); width:100%; text-align:center; padding:15px; margin-bottom:0; margin-top:0; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; font-size: 1.5rem;"><span> HAPPY JOURNEY</span> </h2>
+      <h2 class="ticketend" style="background-color: rgb(255, 182, 45); width:100%; text-align:center; padding:15px; margin-bottom:0; margin-top:0; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; font-size: 1.5rem;"><span><i class="fa-solid fa-hands-praying"></i>&nbsp;HAPPY JOURNEY&nbsp;<i class="fa-solid fa-hands-praying"></i></span> </h2>
     </div>
   </div>
 

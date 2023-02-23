@@ -29,7 +29,7 @@
       background-position: center bottom;
       position:relative;
       color:white;
-      padding:25vh 20rem;
+      padding:19vh 20rem;
       display:flex;
       flex-direction:column;
       align-items:center;
@@ -58,7 +58,7 @@
 
     .blackBg{
       /* background:#00000050; */
-
+      width:700px;
     }
 
     .hero h1{
@@ -67,17 +67,18 @@
     .hero p{
       color:white;
       text-align:center;
+      margin-top: 5rem;
       margin-bottom:10rem;
-      font-weight:200;
+      font-weight:400;
       line-height:2.5rem;
     }
     .hero h1 span{
-      font-size:6.5rem;
+      font-size:7.5rem;
       font-weight:300;
-      /* font-family: 'Unbounded', cursive; */
-      /* font-family: 'DM Serif Text', serif; */
-      font-family: 'Poppins', sans-serif;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Unbounded', cursive; 
+      font-family: 'DM Serif Text', serif;
+      /* font-family: 'Poppins', sans-serif;
+      font-family: 'Montserrat', sans-serif; */
     }
 
 
@@ -85,7 +86,7 @@
       text-decoration:none;
       text-transform:uppercase;
       font-weight:bold;
-      margin:10px;
+      margin:20px;
       padding:1rem 3rem;
       border:2px solid white;
       border-radius:5px;
@@ -98,6 +99,7 @@
       text-decoration:none;
       background:transparent;
       color:white;
+      border-color: lightgreen;
     }
 </style>
 
@@ -112,11 +114,12 @@ include 'homehead.php';
   <div class="blackBg">
 
     <h1>
-      <span>M-Ticket</span>
+      <span>M - Ticket</span>
     </h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, saepe mollitia. Explicabo deleniti, fugiat, quo hic vel, suscipit nobis nostrum sed ex similique debitis reiciendis! Illo adipisci sed recusandae atque.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, saepe mollitia. Explicabo deleniti, fugiat, quo hic vel, suscipit nobis nostrum sed ex similique debitis reiciendis! Illo adipisci sed recusandae atque.
+      
+      THIS IS THE OFFICIAL M-TICKET WEB APPLICATION. THE USERS HAVE TO FIRST REGISTER TO BOOK TICKETS. TRAIN AS WELL AS BUS TICKETS CAN BE BOOKED HERE.
+      NOTE THAT THE TICKETS BOOKED ARE ONLY APPLICABLE FOR 24 HRS. USER CAN USE ANY CARD TO MAKE THE PAYMENT.
     </p>
   </div>
   <div>

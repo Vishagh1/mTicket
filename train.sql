@@ -42,7 +42,7 @@ CREATE TABLE `admindatabase` (
 --
 
 INSERT INTO `admindatabase` (`UserID`, `Name`, `Email`, `Gender`, `password`, `DoB`, `Joined_on`) VALUES
-(1, 'prajwal', 'prajwal@gmail.com', 'M', '1234', '1999-02-13', '2010-01-02 06:21:18');
+(1, 'vishagh', 'vishagh@gmail.com', 'M', '1234', '2002-06-28', '2022-12-02 06:21:18');
 
 -- --------------------------------------------------------
 

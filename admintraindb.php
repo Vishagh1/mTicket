@@ -17,7 +17,7 @@ include 'adminheader.php';
 
      table#data {
           font-size: 16px;
-          font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+          font-family: 'Poppins', sans-serif !important;
           border-collapse: collapse;
           border-spacing: 0;
           width: 100%;
@@ -40,10 +40,37 @@ include 'adminheader.php';
           background-color: black;
           color: white;
      }
+
+     .proceed-button {
+          width: 100%;
+          font-size: small;
+          padding: 1rem;
+          border-radius: 5px;
+          text-transform: uppercase;
+          font-weight: 400;
+          letter-spacing: .2rem;
+          align-content: left;
+          color: white;
+          background-color: black;
+          transition: .3s all ease;
+          padding-bottom:10 rem;
+          margin-bottom: 5rem;
+     }
+
+     .proceed-button:hover {
+          background-color: white;
+          color: black;
+     }
+
+     .titletraindb {
+          margin-top: 1rem;
+          font-family: 'Poppins', sans-serif !important;
+          font-weight: 700;
+     }
 </style>
 
 <head>
-     <title>TRAIN PASSENGERS DATABASE</title>
+     <title class="titletraindb">TRAIN PASSENGERS DATABASE</title>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
      <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
@@ -54,7 +81,7 @@ include 'adminheader.php';
 <body>
      <br /><br />
      <div class="container">
-          <h3 align="center">TRAIN PASSENGERS DATABASE</h3>
+          <h3 class="titletraindb" align="center">TRAIN PASSENGERS DATABASE</h3>
           <br />
           <div class="table-responsive">
                <table id="data" class="table table-striped table-bordered">
@@ -108,5 +135,5 @@ include 'adminheader.php';
 
 <table align='center'>
      <tr><!--<td><a href='pay.php'><button>Proceed</button></a></td>-->
-          <td><a href='admin.php'><button style="background-color: black ; border-color:black "><span style="color:white">Go Back </span> </button></a></td>
+          <td><a href='admin.php'><button class="proceed-button">Go Back </span> </button></a></td>
      </tr>

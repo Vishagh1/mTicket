@@ -24,6 +24,9 @@ session_start();
         background-color: white;
         color: black;
     }
+    .para{
+        font-family: 'Poppins', sans-serif;
+    }
 </style>
 
 <head>
@@ -34,7 +37,7 @@ session_start();
 <body style="background-color: F5F1F0;">
     <?php
     session_destroy();
-    echo '<center><h2>Thank You for using M-Ticket Booking Application<h2></center><br>';
+    echo '<center><h2 class="para">Thank You for using M-Ticket Booking Application&nbsp;<i class="fa-solid fa-hands-praying"></i></h2></center><br>';
     echo '<center><table><tr><td><A href="index.php"><button class="proceed-button">Sign in &nbsp&nbspAgain</button></a></td></tr></table></center>';
     ?>
 </body style="background-color: F5F1F0;">

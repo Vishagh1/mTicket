@@ -17,7 +17,7 @@ $no = $_POST['number'];
 if ($source == $dest) {
   echo "<h1>Selected source and destination same , Please refill the details </h1><br><br>";
 } else {
-  echo '<h1 style="margin-top:10rem;"><center><b>Select Route and Proceed to Checkout</center></b></h1>';
+  echo '<h1 style="margin-top:10rem;"><center><b>Select Route and Proceed to Checkout&nbsp;<i class="fa-solid fa-route"></i></center></b></h1>';
   $sql_price = "SELECT * FROM `price` WHERE `source` LIKE '$source' AND `dest` LIKE '$dest' AND `type` LIKE '$type' AND `class` = '$class'";
 
   echo '<h1 class="route-details"><center>' . $class . " class Ticket From " . $source . " to " . $dest . "</center></h1>";

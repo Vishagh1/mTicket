@@ -44,7 +44,7 @@ table#database_table {
             
       </head>  
       <body >  
-             <h2 style="margin-block:6rem;"><center><b>USER'S TRAIN BOOKINGS </center></b></h2>
+             <h2 style="margin-block:6rem;"><center><b>USER'S TRAIN BOOKINGS&nbsp;&nbsp;<i class="fa-solid fa-receipt"></i> </center></b></h2>
 
            <div class="container">  
                 <br />  

@@ -26,7 +26,7 @@ if ($source == $dest) {
     $final = $row["Price"] * $no;
     $busnum = $row["Bus_No."];
 
-    echo '<h1 style="margin-top:10rem;"><center><b>Proceed to Checkout</center></b></h1>';
+    echo '<h1 style="margin-top:10rem;"><center><b>Proceed to Checkout&nbsp;<i class="fa-solid fa-route"></i> </center></b></h1>';
     echo '<h1 class="route-details"><center>Bus number ' . $busnum . "</center></h1>";
     echo '
     <div class="payment-options">

@@ -35,7 +35,9 @@ table#database_table {
     background-color: black;
     color: white;
 }
-
+.booktitle{
+    margin-top: 5rem;
+}
 
 </style>
 
@@ -47,7 +49,7 @@ table#database_table {
       <body >  
 
            <div class="container">  
-             <h2><center><b><img src="https://img.icons8.com/nolan/64/database.png"/>USER'S BUS BOOKINGS <img src="https://img.icons8.com/ultraviolet/50/000000/bus.png"/></center></b></h1>
+             <h2 class="booktitle"><center><b>USER'S BUS BOOKINGS&nbsp;&nbsp;<i class="fa-solid fa-receipt"></i></center></b></h1>
                 <br />  
                      <table id="database_table" class="table table-striped table-bordered">  
                           <thead>  

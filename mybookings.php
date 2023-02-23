@@ -14,7 +14,7 @@ include 'header.php';
   .container {
     width: 35%;
     border-spacing: 10px;
-    box-shadow: 0px 0px 10px 0px gray;
+    box-shadow: 0px 0px 20px 0px gray;
     border-radius: 10px;
     font-family: Montserrat, sans-serif;
     font-size: 18px !important;
@@ -47,7 +47,7 @@ include 'header.php';
   <br><br>
 
   <div class="container">
-    <h1 style="text-align:center; font-weight:bold; text-align:center; text-transform:capitalize; margin-block:1rem;">My Bookings</h1>
+    <h1 style="text-align:center; font-weight:bold; text-align:center; text-transform:capitalize; margin-block:1rem;">My Bookings&nbsp;&nbsp;<i class="fa-solid fa-receipt"></i></h1>
     <hr />
     <td><a href='trainbookings.php'><button class="link-button"><i class="fa-sharp fa-solid fa-ticket"></i>&nbsp &nbsp
           &nbsp View Train Bookings </button></a></td>

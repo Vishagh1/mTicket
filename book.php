@@ -10,8 +10,8 @@ include 'header.php';
 <style>
   body {
     font-weight: 300 !important;
-    background: whitesmoke;
-
+    /* background: whitesmoke; */
+    background: linear-gradient(lightgray, white);
   }
 
   .container {
@@ -20,7 +20,7 @@ include 'header.php';
     font-family: Montserrat, sans-serif;
     font-size: 18px !important;
     background: white;
-    box-shadow: 0px 0px 10px 0px gray;
+    box-shadow: 0px 0px 20px 0px gray;
     border-radius: 10px;
     align-content: center;
     padding: 10px 50px;
@@ -92,7 +92,7 @@ include 'header.php';
       <section id="form" class="">
         <div class="container2">
           <form id="bookingForm">
-            <h1 style="text-align:center; font-weight:semibold; text-align:left; text-transform:capitalize; margin-block:1rem;">Book Your Train</h1>
+            <h1 style="text-align:center; font-weight:semibold; text-align:left; text-transform:capitalize; margin-block:1rem;">Book Your Train&nbsp;&nbsp;<i class="fa-solid fa-train"></i></h1>
             <hr />
             <div class="input-container">
               <label for="inputEmail4">Source Station :</label>

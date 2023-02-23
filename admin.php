@@ -47,7 +47,7 @@ include 'header.php';
   <br><br>
 
   <div class="container">
-    <h1 style="text-align:center; font-weight:bold; text-align:center; text-transform:capitalize; margin-block:1rem;">My Bookings</h1>
+    <h1 style="text-align:center; font-weight:bold; text-align:center; text-transform:capitalize; margin-block:1rem;">Bookings</h1>
     <hr />
     <td><a href='admintraindb.php'><button class="link-button"><i class="fa-sharp fa-solid fa-ticket"></i>&nbsp &nbsp
           &nbsp View Train Bookings </button></a></td>

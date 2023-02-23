@@ -13,7 +13,8 @@ $sql_userdatabase = "Select * from userdatabase where email = '$email' and passw
 $result_userdatabase = mysqli_query($connect, $sql_userdatabase);
 if(mysqli_num_rows($result_userdatabase) <= 0)
 {
-		echo "<center><h1><b>Something went wrong please login again<b> </h1></center><br><br>";
+	
+		echo "<center><h1><b>Something went wrong please login again <b> </h1></center><br><br>";
 echo '<center><table><tr><td><A href="sindex.php"><button style="background-color:black; border-color:black"><span style="color:white">Sign in ! &nbsp&nbspAgain</span></button></a></td></tr></table></center>';
 }
 else

@@ -89,11 +89,11 @@ if ($_SESSION['log'] == '') {
       <hr>
       <div class="input-container">
         <h3> Card No.: </h3>
-        <input type="Number" name="cno" placeholder="1111-2222-3333-4444" maxlength='50'>
+        <input type="Number" name="cno" placeholder="Enter Card No." maxlength='50'>
       </div>
       <div class="input-container">
         <h3>Name on Card: </h3>
-        <input type="Text" name="name" placeholder="Vishagh" maxlength='50'>
+        <input type="Text" name="name" placeholder="Enter Name" maxlength='50'>
       </div>
       <div class="input-container">
         <h3>Expiry Date : </h3>

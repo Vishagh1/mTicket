@@ -18,13 +18,13 @@
 
       margin-bottom: 50px;
       border-radius: 0;
-      font-family: Montserrat, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin-bottom: 0;
       border: 0;
       font-size: 23px !important;
-      letter-spacing: 2px;
-      opacity: 2;
       padding: 10px;
+      letter-spacing: 1px;
+      color:white;
     }
 
     .umbotron {
@@ -32,7 +32,7 @@
     }
 
     footer {
-      background-color: #f2f2f2;
+      background-color: black;
       padding: 25px;
     }
 

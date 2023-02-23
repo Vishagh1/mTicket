@@ -42,6 +42,10 @@ include 'header.php';
 	.booking-summary-table th,
 	.booking-summary-table td {
 		background: transparent !important;
+
+	}
+	.bookdonename{
+		padding-top: 5rem;
 	}
 </style>
 
@@ -56,7 +60,9 @@ while ($row = mysqli_fetch_assoc($result)) :
 ?>
 
 	<body style="background-color: F5F1F0; ">
-		<h2 align="center"><b><img src="https://img.icons8.com/ios-filled/50/000000/summary-list.png" /> Booking Summary</b></h2>
+		<div class=bookdonename>
+			<h2 class align="center"><b>Booking Summary&nbsp;&nbsp;<i class="fa-solid fa-receipt"></i></b></h2>
+		</div>
 		<br>
 		<div style="display:flex; flex-direction:column; align-items:center">
 

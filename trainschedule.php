@@ -11,7 +11,6 @@ include 'header.php';
 
 </div>
 <style>
-    
     table#database_table {
         font-size: 16px;
         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -37,9 +36,12 @@ include 'header.php';
         color: white;
     }
 
-    .table-title{
+    .table-title {
         text-align: center;
+        margin-top: 5rem;
         margin-block: 6rem;
+        font-family: 'Poppins', sans-serif !important;
+        font-weight: 700;
     }
 </style>
 
@@ -53,7 +55,7 @@ include 'header.php';
 
 <body>
     <h2 class="table-title">
-        PANVEL TO THANE TRAIN SCHEDULE
+        PANVEL TO THANE TRAIN SCHEDULE&nbsp;&nbsp;<i class="fa-solid fa-calendar-days"></i>
     </h2>
 
     <div class="container">
@@ -109,10 +111,10 @@ include 'header.php';
                 ?>
             </tbody>
         </table>
-        
-        <hr/>
-        <hr/>
-        <hr/>
+
+        <hr />
+        <hr />
+        <hr />
     </div>
     <script>
         $(document).ready(function() {
@@ -122,7 +124,7 @@ include 'header.php';
                 ]
             });
         });
-        </script>
+    </script>
     <?php include 'footer.php';
     ?>
     <!-- <td>' . $row["Seawood Darave"] . '</td>
