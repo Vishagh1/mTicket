@@ -43,8 +43,8 @@ include 'homehead.php';
     <form method='post' action ='adminauthenticate.php' style="margin-top:10rem; background:transparent; backdrop-filter:blur(10px); color:white; box-shadow: 0px 0px 10px 0px #ffffff22;"  >
         <h2 style="margin-bottom:5rem;"><center><b>Admin Sign In</center></b></h2>
 <div>
-<label style="">Email id:</label> <input style="color:black; border-radius:5px; border:1px solid gray" placeholder="Enter here..." type="email" name="email" maxlength='50'/>
-<label style="">Password:</label> <input style="color:black; border-radius:5px; border:1px solid gray" placeholder="Enter here..." type="password" name="password" maxlength='50'/>
+<label style="">Email id:</label> <input style="color:black; border-radius:5px; border:1px solid gray" placeholder="Enter here..." type="email" name="email" maxlength='50' required/>
+<label style="">Password:</label> <input style="color:black; border-radius:5px; border:1px solid gray" placeholder="Enter here..." type="password" name="password" maxlength='50' required/>
 <tr><td colspan='2'>
     <center>
         <button type='Submit' style="background-color:black; border:none; text-transform:uppercase;" name='login_submit' >

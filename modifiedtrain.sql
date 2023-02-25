@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2021 at 08:55 AM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 7.3.29
+-- Generation Time: Feb 25, 2023 at 12:15 PM
+-- Server version: 10.4.25-MariaDB
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,7 +42,7 @@ CREATE TABLE `admindatabase` (
 --
 
 INSERT INTO `admindatabase` (`UserID`, `Name`, `Email`, `Gender`, `password`, `DoB`, `Joined_on`) VALUES
-(1, 'vishagh', 'vishagh@gmail.com', 'M', '1234', '2002-06-28', '2022-12-02 06:21:18');
+(1, 'Vishagh', 'vishaghsivankutty11@gmail.com', 'M', '1234', '2002-06-28', '2023-01-01 05:34:49');
 
 -- --------------------------------------------------------
 
@@ -72,12 +72,35 @@ CREATE TABLE `bustransactions` (
 --
 
 INSERT INTO `bustransactions` (`T_No.`, `email`, `source`, `dest`, `Name`, `Bus_No`, `NoOfpass`, `card_no`, `expmonth`, `expyear`, `cvv`, `pin`, `Date`, `Amt`) VALUES
-(1, 'prathamesh@gmail.com', 'Thane Railway Station', 'Court Naka', 'Prathamesh', 502, 2, 0, 0, 0, 0, 0, '2020-03-06 13:30:10', 5),
-(2, 'akshayp@gmail.com', 'Thane Railway Station', 'Shivaji Maharaj Hospital', 'akshaypadave', 502, 2, 0, 0, 0, 0, 0, '2020-03-06 14:16:16', 5),
-(3, 'akshayp@gmail.com', 'Thane Railway Station', 'Ganpati Pada', 'akshaypadave', 502, 2, 0, 0, 0, 0, 0, '2020-03-06 16:17:45', 5),
-(4, 'PRAJWAL@GMAIL.COM', 'Thane Railway Station', 'Court Naka', 'PRAJWAL', 502, 4, 0, 0, 0, 0, 0, '2020-04-07 21:17:46', 5),
-(5, 'PRAJWAL@GMAIL.COM', 'Thane Railway Station', 'Court Naka', 'PRAJWAL', 502, 3, 0, 0, 0, 0, 0, '2020-05-07 13:00:02', 5),
-(7, 'PRAJWAL@GMAIL.COM', 'Thane Railway Station', 'Court Naka', 'PRAJWAL', 502, 5, 0, 0, 0, 0, 0, '2021-07-21 11:59:21', 25);
+(1, 'arun@gmail.com', 'Thane Railway Station', 'Court Naka', 'arun', 502, 2, 0, 0, 0, 0, 0, '2020-03-06 13:30:10', 5),
+(2, 'vishal@gmail.com', 'Thane Railway Station', 'Shivaji Maharaj Hospital', 'vishal', 502, 2, 0, 0, 0, 0, 0, '2020-03-06 14:16:16', 5),
+(3, 'vishal@gmail.com', 'Thane Railway Station', 'Ganpati Pada', 'vishal', 502, 2, 0, 0, 0, 0, 0, '2020-03-06 16:17:45', 5),
+(4, 'arun@gmail.com', 'Thane Railway Station', 'Court Naka', 'Arun', 502, 4, 0, 0, 0, 0, 0, '2020-04-07 21:17:46', 5),
+(5, 'arun@gmail.com', 'Thane Railway Station', 'Court Naka', 'Arun', 502, 3, 0, 0, 0, 0, 0, '2020-05-07 13:00:02', 5),
+(7, 'arun@gmail.com', 'Thane Railway Station', 'Court Naka', 'arun', 502, 5, 0, 0, 0, 0, 0, '2021-07-21 11:59:21', 25),
+(8, 'arun@gmail.com', 'Thane Railway Station', 'Dadoji Kondadev Stadium', 'arun', 502, 1, 0, 0, 0, 0, 0, '2022-12-01 18:11:50', 5),
+(9, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Kalwa Naka', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-01 11:07:22', 5),
+(10, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Siemens Company', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-29 18:46:28', 10),
+(11, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Bharat Bijali', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-29 18:58:00', 10),
+(12, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Bharat Bijali', 'Vishagh Sivankutty', 502, 1, 454545454, 122, 21, 211, 3211, '2023-01-29 19:01:23', 10),
+(13, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Airoli Railway Station', 'Vishagh Sivankutty', 502, 2, 0, 0, 0, 0, 0, '2023-01-29 19:03:45', 20),
+(14, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Rabale Police Station', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-29 19:31:52', 10),
+(15, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Rabale Police Station', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-29 20:00:55', 10),
+(16, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Rabale Police Station', 'Vishagh Sivankutty', 502, 2, 0, 0, 0, 0, 0, '2023-01-30 16:23:56', 20),
+(17, 'vishaghsivankutty11@gmail.com', 'Sha Damodar Vitavkar Marg', 'Thane Railway Station', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-31 10:37:05', 10),
+(18, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Rabale Naka', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-31 15:32:44', 10),
+(19, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Airoli Railway Station', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-31 16:33:53', 10),
+(20, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Rabale Police Station', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-31 16:39:25', 10),
+(21, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Rabale Police Station', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-31 16:40:11', 10),
+(22, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Airoli Railway Station', 'Vishagh Sivankutty', 502, 1, 0, 0, 0, 0, 0, '2023-01-31 16:51:58', 10),
+(23, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Rabale Police Station', 'Vishagh Sivankutty', 502, 1, 2147483647, 1, 23, 254, 1111, '2023-01-31 17:27:02', 10),
+(24, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Digha Gaon', 'Vishagh Sivankutty', 502, 4, 0, 0, 0, 0, 0, '2023-01-31 19:38:45', 20),
+(25, 'vishaghsivankutty11@gmail.com', 'Siemens Company', 'Thane Railway Station', 'Vishagh Sivankutty', 502, 3, 0, 0, 0, 0, 0, '2023-02-01 09:08:10', 15),
+(26, 'vishaghsivankutty11@gmail.com', 'Bharat Bijali', 'Thane Railway Station', 'Vishagh Sivankutty', 502, 3, 0, 0, 0, 0, 0, '2023-02-01 09:16:39', 15),
+(27, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Airoli Naka', 'Vishagh Sivankutty', 502, 3, 0, 0, 0, 0, 0, '2023-02-07 10:08:01', 15),
+(28, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'MSEB', 'Vishagh Sivankutty', 502, 4, 0, 0, 0, 0, 0, '2023-02-15 18:50:44', 20),
+(29, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Ganpati Pada', 'Vishagh Sivankutty', 502, 4, 0, 0, 0, 0, 0, '2023-02-22 22:13:06', 20),
+(30, 'vishaghsivankutty11@gmail.com', 'Thane Railway Station', 'Airoli Naka', 'Vishagh Sivankutty', 502, 5, 0, 0, 0, 0, 0, '2023-02-24 22:16:16', 25);
 
 -- --------------------------------------------------------
 
@@ -2563,58 +2586,87 @@ CREATE TABLE `transactions` (
 --
 
 INSERT INTO `transactions` (`T_No.`, `email`, `source`, `dest`, `Name`, `Class`, `Type`, `NoOfpass`, `card_no`, `expmonth`, `expyear`, `cvv`, `pin`, `Date`, `Amt`, `Route`) VALUES
-(1, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Nerul', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-08 02:34:04', 75, 'Panvel-Juinagar-Thane'),
-(2, 'sutarprajwal10@gmail.com', 'Panvel', 'Khandeshwar', 'prajwal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 04:54:46', 50, 'Panvel-Juinagar-Thane'),
-(3, 'sutarprajwal10@gmail.com', 'Panvel', 'Khandeshwar', 'prajwal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-08 05:07:59', 50, 'Panvel-Juinagar-Thane'),
-(4, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Seawood Darave', 'PRAJWAL', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 18:56:52', 75, 'Panvel-Juinagar-Thane'),
-(5, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Kharghar', 'PRAJWAL', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 23:34:48', 50, 'Panvel-Juinagar-Thane'),
-(6, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Thane', 'PRAJWAL', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 23:39:47', 155, 'Panvel-Sanpada-Thane'),
-(7, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Manasarovar', 'PRAJWAL', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 23:44:10', 50, 'Panvel-Juinagar-Thane'),
-(8, 'sutarprajwal10@gmail.com', 'Panvel', 'Nerul', 'prajwal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-08 23:46:14', 75, 'Panvel-Juinagar-Thane'),
-(9, 'sutarprajwal10@gmail.com', 'Panvel', 'Seawood Darave', 'prajwal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 23:49:20', 75, 'Panvel-Juinagar-Thane'),
-(10, 'sutarprajwal10@gmail.com', 'Panvel', 'Airoli', 'prajwal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-08 23:49:50', 140, 'Panvel-Sanpada-Thane'),
-(11, 'sutarprajwal10@gmail.com', 'Panvel', 'Khandeshwar', 'prajwal', 'First', 'Return', 3, 0, 0, 0, 0, 0, '2020-04-08 23:50:28', 100, 'Panvel-Juinagar-Thane'),
-(12, 'sutarprajwal10@gmail.com', 'Panvel', 'Khandeshwar', 'prajwal', 'First', 'Return', 4, 0, 0, 0, 0, 0, '2020-04-08 23:53:54', 100, 'Panvel-Juinagar-Thane'),
-(13, 'sutarprajwal10@gmail.com', 'Panvel', 'Manasarovar', 'prajwal', 'First', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-08 23:55:04', 100, 'Panvel-Juinagar-Thane'),
-(14, 'sutarprajwal10@gmail.com', 'Panvel', 'Seawood Darave', 'prajwal', 'First', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-09 02:08:03', 150, 'Panvel-Juinagar-Thane'),
-(15, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Airoli', 'PRAJWAL', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-09 03:31:56', 140, 'Sanpada'),
-(16, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Manasarovar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 07:20:19', 50, ''),
-(17, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Khandeshwar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:01:06', 50, ''),
-(18, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Khandeshwar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:02:30', 50, ''),
-(19, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Manasarovar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:07:27', 50, '0'),
-(20, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Khandeshwar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:10:25', 50, '\".$source.\" - \".$Route.\" '),
-(21, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Manasarovar', 'PRAJWAL', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-09 08:11:33', 50, '.$source. .$Route. - .$de'),
-(22, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Manasarovar', 'PRAJWAL', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-09 08:15:43', 50, '$_SESSION[source] - $_SES'),
-(23, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Khandeshwar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:25:01', 50, 'PanvelKhandeshwar'),
-(24, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Thane', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:31:02', 155, 'Panvel- Sanpada -Thane'),
-(25, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Manasarovar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 18:19:07', 50, 'Panvel-Manasarovar'),
-(26, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Thane', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 19:24:34', 155, 'Panvel- Sanpada -Thane'),
-(27, 'PRAJWAL@GMAIL.COM', 'Juinagar', 'Airoli', 'PRAJWAL', 'Second', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 19:33:33', 30, 'Juinagar- Sanpada -Airoli'),
-(28, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Thane', 'PRAJWAL', 'Second', 'Return', 3, 0, 0, 0, 0, 0, '2020-04-10 01:50:21', 90, 'Panvel- Sanpada -Thane'),
-(29, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Thane', 'PRAJWAL', 'Second', 'Return', 3, 0, 0, 0, 0, 0, '2020-04-10 02:02:18', 90, 'Panvel- Sanpada -Thane'),
-(30, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Manasarovar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-10 02:56:32', 150, 'Panvel-Manasarovar'),
-(31, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Nerul', 'PRAJWAL', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-10 03:05:21', 150, 'Panvel-Nerul'),
-(32, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Nerul', 'PRAJWAL', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2020-04-10 03:07:34', 75, 'Panvel-Nerul'),
-(33, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Khandeshwar', 'PRAJWAL', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-11 12:42:24', 200, 'Panvel-Khandeshwar'),
-(34, 'sutarprajwal10@gmail.com', 'Panvel', 'Kharghar', 'prajwal', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 15:29:26', 100, 'Panvel-Kharghar'),
-(35, 'sutarprajwal10@gmail.com', 'Panvel', 'Sanpada', 'prajwal', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 15:30:11', 210, 'Panvel-Sanpada'),
-(36, 'sutarprajwal10@gmail.com', 'Panvel', 'Manasarovar', 'prajwal', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 15:36:07', 100, 'Panvel-Manasarovar'),
-(37, 'prajwalsutar10@gmail.com', 'Panvel', 'Kharghar', 'prajwal sutar', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 17:32:49', 100, 'Panvel-Kharghar'),
-(38, 'prajwalsutar10@gmail.com', 'Panvel', 'Manasarovar', 'prajwal sutar', 'Second', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-11 17:52:44', 20, 'Panvel-Manasarovar'),
-(39, 'prajwalsutar10@gmail.com', 'Panvel', 'Manasarovar', 'prajwal sutar', 'Second', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-11 17:52:49', 20, 'Panvel-Manasarovar'),
-(40, 'prajwalsutar10@gmail.com', 'Panvel', 'Manasarovar', 'prajwal sutar', 'Second', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-11 17:52:54', 20, 'Panvel-Manasarovar'),
-(41, 'sutarprajwal10@gmail.com', 'Panvel', 'Belapur CBD', 'prajwal sutar', 'First', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-11 17:56:30', 300, 'Panvel-Belapur CBD'),
-(42, 'sutarprajwal10@gmail.com', 'Panvel', 'Khandeshwar', 'prajwal sutar', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 17:57:47', 100, 'Panvel-Khandeshwar'),
-(43, 'sutarprajwal10@gmail.com', 'Panvel', 'Kharghar', 'prajwal sutar', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 17:59:36', 100, 'Panvel-Kharghar'),
-(44, 'sutarprajwal10@gmail.com', 'Panvel', 'Airoli', 'prajwal sutar', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-12 06:29:38', 420, 'Panvel- Sanpada -Airoli'),
-(45, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Belapur CBD', 'PRAJWAL', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-05-04 14:52:14', 75, '-'),
-(46, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Kharghar', 'PRAJWAL', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-05-04 14:53:39', 100, 'Panvel-Kharghar'),
-(47, 'sutarprajwal10@gmail.com', 'Panvel', 'Belapur CBD', 'prajwal sutar', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-05-04 15:01:55', 150, 'Panvel-Belapur CBD'),
-(48, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Belapur CBD', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-05-07 12:55:28', 225, 'Panvel-Belapur CBD'),
-(49, 'PRAJWAL@GMAIL.COM', 'Airoli', 'Juinagar', 'PRAJWAL', 'Second', 'Single', 2, 0, 0, 0, 0, 0, '2020-05-07 13:04:56', 20, 'Airoli- Sanpada -Juinagar'),
-(50, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Thane', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-05-07 19:17:43', 465, 'Panvel- Sanpada -Thane'),
-(51, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Khandeshwar', 'PRAJWAL', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-05-23 21:29:05', 150, 'Panvel-Khandeshwar'),
-(52, 'PRAJWAL@GMAIL.COM', 'Panvel', 'Belapur CBD', 'PRAJWAL', 'Second', 'Single', 4, 0, 0, 0, 0, 0, '2021-07-21 11:58:51', 40, 'Panvel-Belapur CBD');
+(1, 'visal@gmail.com', 'Panvel', 'Nerul', 'visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-08 02:34:04', 75, 'Panvel-Juinagar-Thane'),
+(2, 'arun@gmail.com', 'Panvel', 'Khandeshwar', 'arun', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 04:54:46', 50, 'Panvel-Juinagar-Thane'),
+(3, 'arun@gmail.com', 'Panvel', 'Khandeshwar', 'arun', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-08 05:07:59', 50, 'Panvel-Juinagar-Thane'),
+(4, 'visal@gmail.com', 'Panvel', 'Seawood Darave', 'Visal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 18:56:52', 75, 'Panvel-Juinagar-Thane'),
+(5, 'visal@gmail.com', 'Panvel', 'Kharghar', 'Visal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 23:34:48', 50, 'Panvel-Juinagar-Thane'),
+(6, 'visal@gmail.com', 'Panvel', 'Thane', 'Visal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 23:39:47', 155, 'Panvel-Sanpada-Thane'),
+(7, 'visal@gmail.com', 'Panvel', 'Manasarovar', 'Visal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 23:44:10', 50, 'Panvel-Juinagar-Thane'),
+(8, 'arun@gmail.com', 'Panvel', 'Nerul', 'arun', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-08 23:46:14', 75, 'Panvel-Juinagar-Thane'),
+(9, 'arun@gmail.com', 'Panvel', 'Seawood Darave', 'arun', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-08 23:49:20', 75, 'Panvel-Juinagar-Thane'),
+(10, 'arun@gmail.com', 'Panvel', 'Airoli', 'arun', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-08 23:49:50', 140, 'Panvel-Sanpada-Thane'),
+(11, 'arun@gmail.com', 'Panvel', 'Khandeshwar', 'arun', 'First', 'Return', 3, 0, 0, 0, 0, 0, '2020-04-08 23:50:28', 100, 'Panvel-Juinagar-Thane'),
+(12, 'arun@gmail.com', 'Panvel', 'Khandeshwar', 'arun', 'First', 'Return', 4, 0, 0, 0, 0, 0, '2020-04-08 23:53:54', 100, 'Panvel-Juinagar-Thane'),
+(13, 'arun@gmail.com', 'Panvel', 'Manasarovar', 'arun', 'First', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-08 23:55:04', 100, 'Panvel-Juinagar-Thane'),
+(14, 'arun@gmail.com', 'Panvel', 'Seawood Darave', 'arun', 'First', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-09 02:08:03', 150, 'Panvel-Juinagar-Thane'),
+(15, 'visal@gmail.com', 'Panvel', 'Airoli', 'Visal', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-09 03:31:56', 140, 'Sanpada'),
+(16, 'visal@gmail.com', 'Panvel', 'Manasarovar', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 07:20:19', 50, ''),
+(17, 'visal@gmail.com', 'Panvel', 'Khandeshwar', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:01:06', 50, ''),
+(18, 'visal@gmail.com', 'Panvel', 'Khandeshwar', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:02:30', 50, ''),
+(19, 'visal@gmail.com', 'Panvel', 'Manasarovar', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:07:27', 50, '0'),
+(20, 'visal@gmail.com', 'Panvel', 'Khandeshwar', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:10:25', 50, '\".$source.\" - \".$Route.\" '),
+(21, 'visal@gmail.com', 'Panvel', 'Manasarovar', 'Visal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-09 08:11:33', 50, '.$source. .$Route. - .$de'),
+(22, 'visal@gmail.com', 'Panvel', 'Manasarovar', 'Visal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-09 08:15:43', 50, '$_SESSION[source] - $_SES'),
+(23, 'visal@gmail.com', 'Panvel', 'Khandeshwar', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:25:01', 50, 'PanvelKhandeshwar'),
+(24, 'visal@gmail.com', 'Panvel', 'Thane', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 08:31:02', 155, 'Panvel- Sanpada -Thane'),
+(25, 'visal@gmail.com', 'Panvel', 'Manasarovar', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 18:19:07', 50, 'Panvel-Manasarovar'),
+(26, 'visal@gmail.com', 'Panvel', 'Thane', 'Visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 19:24:34', 155, 'Panvel- Sanpada -Thane'),
+(27, 'visal@gmail.com', 'Juinagar', 'Airoli', 'visal', 'Second', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-09 19:33:33', 30, 'Juinagar- Sanpada -Airoli'),
+(28, 'visal@gmail.com', 'Panvel', 'Thane', 'visal', 'Second', 'Return', 3, 0, 0, 0, 0, 0, '2020-04-10 01:50:21', 90, 'Panvel- Sanpada -Thane'),
+(29, 'visal@gmail.com', 'Panvel', 'Thane', 'visal', 'Second', 'Return', 3, 0, 0, 0, 0, 0, '2020-04-10 02:02:18', 90, 'Panvel- Sanpada -Thane'),
+(30, 'visal@gmail.com', 'Panvel', 'Manasarovar', 'visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-10 02:56:32', 150, 'Panvel-Manasarovar'),
+(31, 'visal@gmail.com', 'Panvel', 'Nerul', 'visal', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-10 03:05:21', 150, 'Panvel-Nerul'),
+(32, 'visal@gmail.com', 'Panvel', 'Nerul', 'visal', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2020-04-10 03:07:34', 75, 'Panvel-Nerul'),
+(33, 'visal@gmail.com', 'Panvel', 'Khandeshwar', 'visal', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2020-04-11 12:42:24', 200, 'Panvel-Khandeshwar'),
+(34, 'vishagh@gmail.com', 'Panvel', 'Kharghar', 'vishagh', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 15:29:26', 100, 'Panvel-Kharghar'),
+(35, 'vishagh@gmail.com', 'Panvel', 'Sanpada', 'vishagh', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 15:30:11', 210, 'Panvel-Sanpada'),
+(36, 'vishagh@gmail.com', 'Panvel', 'Manasarovar', 'vishagh', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 15:36:07', 100, 'Panvel-Manasarovar'),
+(37, 'vishagh@gmail.com', 'Panvel', 'Kharghar', 'vishagh', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 17:32:49', 100, 'Panvel-Kharghar'),
+(38, 'vishagh@gmail.com', 'Panvel', 'Manasarovar', 'vishagh', 'Second', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-11 17:52:44', 20, 'Panvel-Manasarovar'),
+(39, 'vishagh@gmail.com', 'Panvel', 'Manasarovar', 'vishagh', 'Second', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-11 17:52:49', 20, 'Panvel-Manasarovar'),
+(40, 'vishagh@gmail.com', 'Panvel', 'Manasarovar', 'vishagh', 'Second', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-11 17:52:54', 20, 'Panvel-Manasarovar'),
+(41, 'vishagh@gmail.com', 'Panvel', 'Belapur CBD', 'vishagh', 'First', 'Return', 2, 0, 0, 0, 0, 0, '2020-04-11 17:56:30', 300, 'Panvel-Belapur CBD'),
+(42, 'vishagh@gmail.com', 'Panvel', 'Khandeshwar', 'vishagh', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 17:57:47', 100, 'Panvel-Khandeshwar'),
+(43, 'vishagh@gmail.com', 'Panvel', 'Kharghar', 'vishagh', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-04-11 17:59:36', 100, 'Panvel-Kharghar'),
+(44, 'vishagh@gmail.com', 'Panvel', 'Airoli', 'vishagh', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-04-12 06:29:38', 420, 'Panvel- Sanpada -Airoli'),
+(45, 'visal@gmail.com', 'Panvel', 'Belapur CBD', 'visal', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-05-04 14:52:14', 75, '-'),
+(46, 'visal@gmail.com', 'Panvel', 'Kharghar', 'visal', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-05-04 14:53:39', 100, 'Panvel-Kharghar'),
+(47, 'vishagh@gmail.com', 'Panvel', 'Belapur CBD', 'vishagh', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2020-05-04 15:01:55', 150, 'Panvel-Belapur CBD'),
+(48, 'visal@gmail.com', 'Panvel', 'Belapur CBD', 'visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-05-07 12:55:28', 225, 'Panvel-Belapur CBD'),
+(49, 'visal@gmail.com', 'Airoli', 'Juinagar', 'visal', 'Second', 'Single', 2, 0, 0, 0, 0, 0, '2020-05-07 13:04:56', 20, 'Airoli- Sanpada -Juinagar'),
+(50, 'visal@gmail.com', 'Panvel', 'Thane', 'visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-05-07 19:17:43', 465, 'Panvel- Sanpada -Thane'),
+(51, 'visal@gmail.com', 'Panvel', 'Khandeshwar', 'visal', 'First', 'Single', 3, 0, 0, 0, 0, 0, '2020-05-23 21:29:05', 150, 'Panvel-Khandeshwar'),
+(52, 'visal@gmail.com', 'Panvel', 'Belapur CBD', 'visal', 'Second', 'Single', 4, 0, 0, 0, 0, 0, '2021-07-21 11:58:51', 40, 'Panvel-Belapur CBD'),
+(53, 'visal@gmail.com', 'Nerul', 'Panvel', 'visal', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2022-12-01 16:26:30', 75, 'Nerul-Panvel'),
+(54, 'visal@gmail.com', 'Nerul', 'Panvel', 'visal', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2022-12-01 16:26:55', 75, 'Nerul-Panvel'),
+(55, 'visal@gmail.com', 'Panvel', 'Manasarovar', 'visal', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2022-12-01 17:39:51', 50, 'Panvel-Manasarovar'),
+(56, 'visal@gmail.com', 'Panvel', 'Khandeshwar', 'visal', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2022-12-01 18:18:31', 50, 'Panvel-Khandeshwar'),
+(57, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Manasarovar', 'Vishagh Sivankutty', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2023-01-01 11:05:16', 100, 'Panvel-Manasarovar'),
+(58, 'vishaghsivankutty11@gmail.com', 'Belapur CBD', 'Juinagar', 'Vishagh Sivankutty', 'First', 'Single', 5, 0, 0, 0, 0, 0, '2023-01-10 06:20:46', 250, 'Belapur CBD-Juinagar'),
+(59, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2023-01-27 19:32:18', 155, 'Panvel- Sanpada -Thane'),
+(60, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2023-01-29 18:09:53', 155, 'Panvel- Sanpada -Thane'),
+(61, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'First', 'Single', 1, 8569856, 0, 0, 565, 5989, '2023-01-29 18:44:19', 155, 'Panvel- Sanpada -Thane'),
+(62, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Airoli', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2023-01-29 18:57:25', 140, 'Panvel- Sanpada -Airoli'),
+(63, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Airoli', 'Vishagh Sivankutty', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2023-01-29 19:04:22', 280, 'Panvel- Sanpada -Airoli'),
+(64, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Khandeshwar', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2023-01-29 19:50:14', 50, 'Panvel-Khandeshwar'),
+(65, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 2, 0, 0, 0, '2023-01-30 16:21:53', 155, 'Panvel- Sanpada -Thane'),
+(66, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Rabale', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2023-01-30 16:29:11', 140, 'Panvel- Sanpada -Rabale'),
+(67, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'First', 'Return', 2, 0, 0, 0, 0, 0, '2023-01-31 10:36:20', 620, 'Panvel- Sanpada -Thane'),
+(68, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2023-01-31 12:16:17', 155, 'Panvel- Sanpada -Thane'),
+(69, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'Second', 'Single', 2, 0, 0, 0, 0, 0, '2023-01-31 15:32:14', 30, 'Panvel- Sanpada -Thane'),
+(70, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'First', 'Single', 2, 0, 0, 0, 0, 0, '2023-01-31 16:03:48', 310, 'Panvel- Sanpada -Thane'),
+(71, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2023-01-31 16:31:44', 155, 'Panvel- Sanpada -Thane'),
+(72, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'A.C', 'Single', 2, 0, 0, 0, 0, 0, '2023-01-31 16:51:36', 360, 'Panvel- Sanpada -Thane'),
+(73, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Thane', 'Vishagh Sivankutty', 'Second', 'Return', 2, 2147483647, 1, 26, 123, 1122, '2023-01-31 17:26:15', 60, 'Panvel- Sanpada -Thane'),
+(74, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Airoli', 'Vishagh Sivankutty', 'First', 'Return', 3, 0, 0, 0, 0, 0, '2023-01-31 19:38:10', 840, 'Panvel- Sanpada -Airoli'),
+(75, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Koparkhairne', 'Vishagh Sivankutty', 'First', 'Return', 2, 0, 0, 0, 0, 0, '2023-02-01 09:07:31', 440, 'Panvel- Sanpada -Koparkha'),
+(76, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Juinagar', 'Vishagh Sivankutty', 'First', 'Single', 1, 0, 0, 0, 0, 0, '2023-02-01 09:16:10', 105, 'Panvel-Juinagar'),
+(77, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Kharghar', 'Vishagh Sivankutty', 'Second', 'Single', 3, 0, 0, 0, 0, 0, '2023-02-07 10:07:19', 15, 'Panvel-Kharghar'),
+(78, 'vishaghsivankutty11@gmail.com', 'Ghansoli', 'Belapur CBD', 'Vishagh Sivankutty', 'First', 'Single', 4, 0, 0, 0, 0, 0, '2023-02-15 18:50:07', 300, 'Ghansoli- Sanpada -Belapu'),
+(79, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Airoli', 'Vishagh Sivankutty', 'First', 'Single', 4, 7, 0, 0, 0, 0, '2023-02-22 22:10:53', 560, 'Panvel- Sanpada -Airoli'),
+(80, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Airoli', 'Vishagh Sivankutty', 'First', 'Single', 4, 2147483647, 6, 28, 12, 1524, '2023-02-22 22:11:55', 560, 'Panvel- Sanpada -Airoli'),
+(81, 'vishaghsivankutty11@gmail.com', 'Panvel', 'Belapur CBD', 'Vishagh Sivankutty', 'Second', 'Single', 5, 0, 0, 0, 0, 0, '2023-02-24 22:15:49', 50, 'Panvel-Belapur CBD');
 
 -- --------------------------------------------------------
 
@@ -2638,7 +2690,9 @@ CREATE TABLE `userdatabase` (
 --
 
 INSERT INTO `userdatabase` (`UserID`, `Name`, `Email`, `Gender`, `password`, `DoB`, `Phone`, `Joined_on`) VALUES
-(20, 'PRAJWAL', 'PRAJWAL@GMAIL.COM', 'M', '123', '2011-11-11', '0', '2020-02-28 02:51:42');
+(47, 'Vishagh Sivankutty', 'vishaghsivankutty11@gmail.com', 'M', '1234', '2002-06-28', '9684756258', '2023-01-01 05:34:49'),
+(48, 'sdfsd', 'vsdf@gmaiml.co', 'F', 'xdcv ', '0000-00-00', 'dxfcv ', '2023-02-22 06:22:21'),
+(50, 'kkk', 'fdgdsgf@gmail.com', 'M', 'sedf', '0000-00-00', 'sdf', '2023-02-22 10:01:20');
 
 --
 -- Indexes for dumped tables
@@ -2671,19 +2725,19 @@ ALTER TABLE `userdatabase`
 -- AUTO_INCREMENT for table `bustransactions`
 --
 ALTER TABLE `bustransactions`
-  MODIFY `T_No.` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `T_No.` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `transactions`
 --
 ALTER TABLE `transactions`
-  MODIFY `T_No.` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `T_No.` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT for table `userdatabase`
 --
 ALTER TABLE `userdatabase`
-  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `UserID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

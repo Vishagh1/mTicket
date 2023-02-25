@@ -38,8 +38,8 @@ include 'homehead.php';
             <center><b>Sign In</center></b>
         </h2>
         <div>
-            <label>Email id:</label> <input style="color:black; border-radius:5px; border:1px solid gray" placeholder="Enter here..." type="email" name="email" maxlength='50' />
-            <label>Password:</label> <input style="color:black; border-radius:5px; border:1px solid gray" placeholder="Enter here..." type="password" name="password" maxlength='50' />
+            <label>Email id:</label> <input style="color:black; border-radius:5px; border:1px solid gray" placeholder="Enter here..." type="email" name="email" maxlength='50' required/>
+            <label>Password:</label> <input style="color:black; border-radius:5px; border:1px solid gray" placeholder="Enter here..." type="password" name="password" maxlength='50' required />
             <tr>
                 <td colspan='2'>
                     <center>

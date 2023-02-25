@@ -89,26 +89,26 @@ if ($_SESSION['log'] == '') {
       <hr>
       <div class="input-container">
         <h3> Card No.: </h3>
-        <input type="Number" name="cno" placeholder="Enter Card No." maxlength='50'>
+        <input type="Number" name="cno" placeholder="Enter Card No." maxlength='16' required>
       </div>
       <div class="input-container">
         <h3>Name on Card: </h3>
-        <input type="Text" name="name" placeholder="Enter Name" maxlength='50'>
+        <input type="Text" name="name" placeholder="Enter Name" maxlength='50' required>
       </div>
       <div class="input-container">
         <h3>Expiry Date : </h3>
         <div class="double-input">
-          <input type="Number" name="Em" placeholder='MM' maxlength='2'>
-          <input type="Number" name="Ey" placeholder='YY' maxlength='2'>
+          <input type="Number" name="Em" placeholder='MM' maxlength='2' required>
+          <input type="Number" name="Ey" placeholder='YY' maxlength='2' required>
         </div>
       </div>
       <div class="input-container">
         <h3>CVV No:</h3>
-        <input type="Password" name="Cvv" maxlength='3'>
+        <input type="Password" name="Cvv" maxlength='3' required>
       </div>
       <div class="input-container">
         <h3>PIN NO: </h3>
-        <input type="Password" name="Pin" maxlength='4'>
+        <input type="Password" name="Pin" maxlength='4' required>
       </div>
       <div class="input-container">
         <button class="proceed-button" type='Submit' name='register_submit'>Complete Payment</button>
