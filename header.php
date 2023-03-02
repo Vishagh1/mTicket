@@ -209,7 +209,7 @@
   <li><a href="trainschedule.php"><img src="https://img.icons8.com/clouds/60/000000/planner.png"/>Train Schedule&nbsp</a></li>
 
   <li class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="https://img.icons8.com/bubbles/60/000000/user.png"/><?php  echo " ". $_SESSION['name'] ."" ?>
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><img src="https://img.icons8.com/bubbles/60/000000/user.png"/>
     <span class="caret"></span></a>
     <ul class="dropdown-menu">
       <li><a href="myprofile.php"><span class="glyphicon glyphicon-user  "></span> My Profile</a></li>
